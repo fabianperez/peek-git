@@ -33,7 +33,7 @@ module Peek
 
       # Fetch the current sha if one isn't present.
       def sha
-        @sha ||= ENV['GIT_SHA'] || `git rev-parse HEAD`.chomp
+        @sha ||= ENV['HEROKU_SLUG_COMMIT'] || ENV['GIT_SHA'] || `git rev-parse HEAD`.chomp
       end
 
       def short_sha

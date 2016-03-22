@@ -9,3 +9,7 @@
 # 1.0.2
 
 - Add support for additional options `:domain` and `:protocol`.
+
+# 1.0.3
+
+- Add support for HEROKU_SLUG_COMMIT env variable
